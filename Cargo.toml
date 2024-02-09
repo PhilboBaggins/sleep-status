@@ -1,8 +1,13 @@
 [package]
 name = "sleep-status"
-description = "Suspends execution for a specified time while updating a progress bar."
 version = "0.1.0"
+authors = ["PhilboBaggins"]
 edition = "2021"
+description = "Suspends execution for a specified time while updating a progress bar."
+repository = "https://github.com/PhilboBaggins/sleep-status"
+license = "MIT OR Apache-2.0"
+keywords = ["sleep", "progressbar", "cli", "terminal", "wait", "delay", "pause"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

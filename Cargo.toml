@@ -1,6 +1,6 @@
 [package]
 name = "sleep-status"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["PhilboBaggins"]
 edition = "2021"
 description = "Suspends execution for a specified time while updating a progress bar."

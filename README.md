@@ -1,6 +1,8 @@
 # Sleep status
 
-Suspends execution for a specified time while updating a progress bar
+Suspends execution for a specified time while updating a progress bar.
+
+![Animated demo](demo.gif)
 
 ## License
 

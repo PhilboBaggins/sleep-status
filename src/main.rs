@@ -17,9 +17,18 @@ fn main() {
         )
         .get_matches();
 
-    let duration_str: &String = matches.get_one("duration").unwrap();
+    let duration_str = match matches.get_one::<String>("duration") {
+        Some(duration_str) if !duration_str.chars().any(char::is_alphabetic) => {
+            eprintln!("No time unit specified, assuming seconds.");
+            format!("{}s", duration_str)
+        }
+        Some(duration_str) => duration_str.to_string(),
+        None => {
+            unreachable!("duration is required")
+        }
+    };
 
-    match parse_duration(duration_str) {
+    match parse_duration(&duration_str) {
         Ok(duration) => {
             do_sleep(duration);
         }
